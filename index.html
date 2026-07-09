@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO META TAGS ===== -->
+  <title>The Royal Spice | Luxury Fine Dining Restaurant in Pune, Maharashtra</title>
+  <meta name="description" content="The Royal Spice is Pune's premier fine dining destination, serving authentic Indian & Continental cuisine in an elegant, award-winning ambience. Reserve your table today.">
+  <meta name="keywords" content="fine dining Pune, luxury restaurant Pune, Indian restaurant, continental cuisine, The Royal Spice, best restaurant FC Road">
+  <meta name="author" content="The Royal Spice">
+  <link rel="canonical" href="https://theroyalspice.com/">
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:title" content="The Royal Spice | Luxury Fine Dining in Pune">
+  <meta property="og:description" content="Experience luxury dining in Pune. Authentic Indian & Continental cuisine crafted by award-winning chefs in an elegant, unforgettable ambience.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80&auto=format&fit=crop">
+  <meta property="og:url" content="https://theroyalspice.com/">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Royal Spice | Luxury Fine Dining in Pune">
+  <meta name="twitter:description" content="Authentic Indian & Continental cuisine in an elegant, award-winning ambience.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80&auto=format&fit=crop">
+
+  <!-- ===== SCHEMA MARKUP ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "The Royal Spice",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80&auto=format&fit=crop",
+    "servesCuisine": ["Indian", "Continental"],
+    "priceRange": "₹₹₹",
+    "telephone": "+91-98765-43210",
+    "email": "info@theroyalspice.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "FC Road",
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "482"
+    }
+  }
+  </script>
+
+  <!-- ===== FAVICON ===== -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
+
+  <!-- ===== GOOGLE FONTS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== LOADING SCREEN ===================== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-content">
+      <span class="loader-crest">✦</span>
+      <h2 class="loader-title">The Royal Spice</h2>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ===================== CUSTOM CURSOR ===================== -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ===================== FLOATING GOLD PARTICLES ===================== -->
+  <div class="particles" id="particles" aria-hidden="true"></div>
+
+  <!-- ===================== SCROLL PROGRESS BAR ===================== -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container" aria-label="Primary navigation">
+      <a href="#home" class="logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">The Royal <em>Spice</em></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#chef" class="nav-link">Chef</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#reservation" class="nav-link">Reservation</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="#reservation" class="btn btn-primary nav-cta">Reserve Table</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80&auto=format&fit=crop"
+           alt="Elegant candlelit fine dining table setting at The Royal Spice" loading="eager">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="eyebrow fade-in-up">Pune's Finest Dining Address</p>
+      <h1 class="hero-title fade-in-up" data-delay="100">
+        Experience <span class="gold-text">Luxury Dining</span> in Pune
+      </h1>
+      <p class="hero-sub fade-in-up" data-delay="200">
+        Authentic Indian &amp; Continental Cuisine, Crafted with Passion
+      </p>
+      <div class="hero-buttons fade-in-up" data-delay="300">
+        <a href="#reservation" class="btn btn-primary">
+          <span>Reserve Table</span>
+        </a>
+        <a href="#menu" class="btn btn-outline">
+          <span>View Menu</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-floating-food" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=500&q=80&auto=format&fit=crop" alt="">
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span class="mouse"><span class="wheel"></span></span>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-image reveal-left">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&q=80&auto=format&fit=crop"
+             alt="Elegant interior of The Royal Spice restaurant with warm gold lighting" loading="lazy">
+        <div class="about-image-badge">
+          <span class="badge-number">15+</span>
+          <span class="badge-label">Years of Excellence</span>
+        </div>
+      </div>
+
+      <div class="about-content reveal-right">
+        <p class="eyebrow">Our Story</p>
+        <h2 class="section-title">A Legacy of <span class="gold-text">Royal Flavours</span></h2>
+        <p class="about-text">
+          Nestled in the heart of Pune, The Royal Spice has been the city's most cherished address
+          for connoisseurs of fine dining. We blend the richness of authentic Indian spice traditions
+          with the refinement of continental technique, served within an ambience of understated
+          luxury. Every plate tells a story of heritage, craftsmanship and passion.
+        </p>
+
+        <ul class="about-checklist">
+          <li><span class="check-icon">✔</span> Premium Dining Experience</li>
+          <li><span class="check-icon">✔</span> Award Winning Chef</li>
+          <li><span class="check-icon">✔</span> Fresh, Hand-Picked Ingredients</li>
+          <li><span class="check-icon">✔</span> Elegant, Timeless Ambience</li>
+        </ul>
+
+        <a href="#reservation" class="btn btn-primary">Book Your Table</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card reveal-up" data-delay="0">
+          <div class="feature-icon">🌿</div>
+          <h3>Fresh Ingredients</h3>
+          <p>Sourced daily from trusted local farms to ensure peak flavour in every dish.</p>
+        </div>
+        <div class="feature-card reveal-up" data-delay="100">
+          <div class="feature-icon">👨‍🍳</div>
+          <h3>Master Chefs</h3>
+          <p>Award-winning culinary experts crafting unforgettable plates with precision.</p>
+        </div>
+        <div class="feature-card reveal-up" data-delay="200">
+          <div class="feature-icon">🥂</div>
+          <h3>Luxury Dining</h3>
+          <p>An opulent, candlelit ambience designed for memorable evenings.</p>
+        </div>
+        <div class="feature-card reveal-up" data-delay="300">
+          <div class="feature-icon">⚡</div>
+          <h3>Fast Service</h3>
+          <p>Attentive, seamless service that never keeps you waiting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span>✦</span></div>
+
+  <!-- ===================== MENU ===================== -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-header center">
+        <p class="eyebrow">Culinary Delights</p>
+        <h2 class="section-title">Our Signature <span class="gold-text">Menu</span></h2>
+        <p class="section-desc">Handcrafted dishes that celebrate the finest of Indian and continental cuisine.</p>
+      </div>
+
+      <div class="menu-filters" id="menuFilters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="indian">Indian</button>
+        <button class="filter-btn" data-filter="continental">Continental</button>
+        <button class="filter-btn" data-filter="chinese">Chinese</button>
+        <button class="filter-btn" data-filter="dessert">Desserts</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+
+        <article class="menu-card" data-category="indian">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=500&q=80&auto=format&fit=crop" alt="Butter Chicken in creamy tomato gravy" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Butter Chicken</h3><span class="menu-price">₹620</span></div>
+            <p>Tender chicken in a velvety tomato-butter gravy, finished with cream.</p>
+            <div class="menu-card-bottom"><span class="stars">★★★★★</span><button class="btn-order">Order</button></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="indian">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=500&q=80&auto=format&fit=crop" alt="Paneer Tikka on a sizzling platter" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Paneer Tikka</h3><span class="menu-price">₹480</span></div>
+            <p>Char-grilled cottage cheese marinated in smoky tandoori spices.</p>
+            <div class="menu-card-bottom"><span class="stars">★★★★★</span><button class="btn-order">Order</button></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="indian">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=500&q=80&auto=format&fit=crop" alt="Chicken Biryani served in a copper handi" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Chicken Biryani</h3><span class="menu-price">₹550</span></div>
+            <p>Fragrant basmati rice slow-cooked with spiced chicken and saffron.</p>
+            <div class="menu-card-bottom"><span class="stars">★★★★★</span><button class="btn-order">Order</button></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="indian">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=500&q=80&auto=format&fit=crop" alt="Mutton Rogan Josh in rich red curry" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Mutton Rogan Josh</h3><span class="menu-price">₹780</span></div>
+            <p>Slow-braised mutton in a Kashmiri red chilli and yogurt gravy.</p>
+            <div class="menu-card-bottom"><span class="stars">★★★★★</span><button class="btn-order">Order</button></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="indian">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&q=80&auto=format&fit=crop" alt="Dal Makhani simmered with butter and cream" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Dal Makhani</h3><span class="menu-price">₹390</span></div>
+            <p>Black lentils simmered overnight with butter, cream and spice.</p>
+            <div class="menu-card-bottom"><span class="stars">★★★★★</span><button class="btn-order">Order</button></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="indian">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?w=500&q=80&auto=format&fit=crop" alt="Tandoori Chicken fresh off the clay oven" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Tandoori Chicken</h3><span class="menu-price">₹590</span></div>
+            <p>Yogurt-marinated chicken roasted in a traditional clay tandoor.</p>
+            <div class="menu-card-bottom"><span class="stars">★★★★★</span><button class="btn-order">Order</button></div>
+          </div>
+        </article>
+
+        <!-- <article class="menu-card" data-category="indian">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1626777553635-be633dc1e922?w=500&q=80&auto=format&fit=crop" alt="Fish Curry in coconut based gravy" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Fish Curry</h3><span class="menu-price">₹680</span></div>
+            <p>Coastal-style fish simmered in a tangy coconut and tamarind curry.</p>
+            <div class="menu-card-bottom"><span class="stars">★★★★★</span><button class="btn-order">Order</button></div>
+          </div>
+        </article> -->
+
+        <article class="menu-card" data-category="continental">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80&auto=format&fit=crop" alt="Margherita Pizza fresh from the oven" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Margherita Pizza</h3><span class="menu-price">₹520</span></div>
+            <p>Wood-fired, San Marzano tomato, fresh basil and buffalo mozzarella.</p>
+            <div class="menu-card-bottom"><span class="stars">★★★★★</span><button class="btn-order">Order</button></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="continental">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&q=80&auto=format&fit=crop" alt="Pasta Alfredo with creamy parmesan sauce" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Pasta Alfredo</h3><span class="menu-price">₹560</span></div>
+            <p>Fettuccine tossed in a silky parmesan and cream sauce.</p>
+            <div class="menu-card-bottom"><span class="stars">★★★★★</span><button class="btn-order">Order</button></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="chinese">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1626200419199-391ae4be7a41?w=500&q=80&auto=format&fit=crop" alt="Veg Manchurian tossed in tangy sauce" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Veg Manchurian</h3><span class="menu-price">₹420</span></div>
+            <p>Crisp vegetable dumplings tossed in a tangy Indo-Chinese sauce.</p>
+            <div class="menu-card-bottom"><span class="stars">★★★★★</span><button class="btn-order">Order</button></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="chinese">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?w=500&q=80&auto=format&fit=crop" alt="Hakka Noodles stir fried with vegetables" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Hakka Noodles</h3><span class="menu-price">₹440</span></div>
+            <p>Wok-tossed noodles with crisp vegetables and soy-garlic sauce.</p>
+            <div class="menu-card-bottom"><span class="stars">★★★★★</span><button class="btn-order">Order</button></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="continental">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=500&q=80&auto=format&fit=crop" alt="Caesar Salad with parmesan and croutons" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Caesar Salad</h3><span class="menu-price">₹380</span></div>
+            <p>Crisp romaine, parmesan shavings, croutons and classic dressing.</p>
+            <div class="menu-card-bottom"><span class="stars">★★★★★</span><button class="btn-order">Order</button></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="dessert">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=500&q=80&auto=format&fit=crop" alt="Chocolate Lava Cake with molten centre" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Chocolate Lava Cake</h3><span class="menu-price">₹340</span></div>
+            <p>Warm dark chocolate cake with a molten centre, vanilla bean ice cream.</p>
+            <div class="menu-card-bottom"><span class="stars">★★★★★</span><button class="btn-order">Order</button></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="dessert">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=500&q=80&auto=format&fit=crop" alt="Gulab Jamun soaked in rose syrup" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Gulab Jamun</h3><span class="menu-price">₹260</span></div>
+            <p>Soft milk dumplings soaked in rose and cardamom scented syrup.</p>
+            <div class="menu-card-bottom"><span class="stars">★★★★★</span><button class="btn-order">Order</button></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="dessert">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=500&q=80&auto=format&fit=crop" alt="Mango Cheesecake slice with fresh mango" loading="lazy"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-top"><h3>Mango Cheesecake</h3><span class="menu-price">₹360</span></div>
+            <p>Silky cheesecake layered with Alphonso mango compote.</p>
+            <div class="menu-card-bottom"><span class="stars">★★★★★</span><button class="btn-order">Order</button></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SPECIAL MENU / CHEF'S RECOMMENDATION ===================== -->
+  <section class="special-menu">
+    <div class="container">
+      <div class="section-header center">
+        <p class="eyebrow">Curated Just For You</p>
+        <h2 class="section-title">Chef's <span class="gold-text">Recommendation</span></h2>
+      </div>
+
+      <div class="special-grid">
+        <article class="special-card reveal-up">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80&auto=format&fit=crop" alt="Luxury grilled steak with herb butter" loading="lazy">
+          <div class="special-overlay">
+            <h3>Luxury Steak</h3>
+            <p>Prime cut, herb butter, roasted vegetables</p>
+            <span class="special-price">₹1,850</span>
+          </div>
+        </article>
+        <article class="special-card reveal-up" data-delay="100">
+          <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80&auto=format&fit=crop" alt="Grilled salmon fillet with lemon and herbs" loading="lazy">
+          <div class="special-overlay">
+            <h3>Grilled Salmon</h3>
+            <p>Citrus glaze, wild greens, saffron sauce</p>
+            <span class="special-price">₹1,650</span>
+          </div>
+        </article>
+        <article class="special-card reveal-up" data-delay="200">
+          <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=800&q=80&auto=format&fit=crop" alt="Royal Thali with assorted Indian delicacies" loading="lazy">
+          <div class="special-overlay">
+            <h3>Royal Thali</h3>
+            <p>A regal spread of seven authentic delicacies</p>
+            <span class="special-price">₹1,950</span>
+          </div>
+        </article>
+        <article class="special-card reveal-up" data-delay="300">
+          <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800&q=80&auto=format&fit=crop" alt="Truffle pasta with parmesan shavings" loading="lazy">
+          <div class="special-overlay">
+            <h3>Truffle Pasta</h3>
+            <p>Black truffle, parmesan, white wine cream</p>
+            <span class="special-price">₹1,450</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATISTICS ===================== -->
+  <section class="stats">
+    <div class="stats-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal-up">
+          <span class="stat-number" data-target="5000" data-suffix="+">0</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+        <div class="stat-item reveal-up" data-delay="100">
+          <span class="stat-number" data-target="120" data-suffix="+">0</span>
+          <span class="stat-label">Dishes</span>
+        </div>
+        <div class="stat-item reveal-up" data-delay="200">
+          <span class="stat-number" data-target="20" data-suffix="+">0</span>
+          <span class="stat-label">Awards</span>
+        </div>
+        <div class="stat-item reveal-up" data-delay="300">
+          <span class="stat-number" data-target="15" data-suffix="+">0</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header center">
+        <p class="eyebrow">Moments &amp; Flavours</p>
+        <h2 class="section-title">Our <span class="gold-text">Gallery</span></h2>
+      </div>
+
+      <div class="masonry-grid">
+        <div class="masonry-item reveal-up"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80&auto=format&fit=crop" alt="Candlelit dinner table setting" loading="lazy"></div>
+        <div class="masonry-item reveal-up"><img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80&auto=format&fit=crop" alt="Butter chicken curry close up" loading="lazy"></div>
+        <div class="masonry-item reveal-up"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80&auto=format&fit=crop" alt="Restaurant interior with warm ambient lighting" loading="lazy"></div>
+        <div class="masonry-item reveal-up"><img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=600&q=80&auto=format&fit=crop" alt="Chicken biryani served in a copper pot" loading="lazy"></div>
+        <div class="masonry-item reveal-up"><img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=600&q=80&auto=format&fit=crop" alt="Paneer tikka on a sizzling platter" loading="lazy"></div>
+        <div class="masonry-item reveal-up"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80&auto=format&fit=crop" alt="Wood fired margherita pizza" loading="lazy"></div>
+        <div class="masonry-item reveal-up"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80&auto=format&fit=crop" alt="Grilled steak plated elegantly" loading="lazy"></div>
+        <div class="masonry-item reveal-up"><img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=600&q=80&auto=format&fit=crop" alt="Chocolate lava cake with molten centre" loading="lazy"></div>
+        <div class="masonry-item reveal-up"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&q=80&auto=format&fit=crop" alt="Gulab jamun dessert in syrup" loading="lazy"></div>
+        <div class="masonry-item reveal-up"><img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&q=80&auto=format&fit=crop" alt="Truffle pasta with fresh herbs" loading="lazy"></div>
+        <div class="masonry-item reveal-up"><img src="https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?w=600&q=80&auto=format&fit=crop" alt="Hakka noodles stir fried with vegetables" loading="lazy"></div>
+        <div class="masonry-item reveal-up"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80&auto=format&fit=crop" alt="Fresh caesar salad in a bowl" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CHEF ===================== -->
+  <section class="chef" id="chef">
+    <div class="container chef-grid">
+      <div class="chef-image reveal-left">
+        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80&auto=format&fit=crop"
+             alt="Executive Chef Arjun Malhotra of The Royal Spice" loading="lazy">
+        <div class="chef-frame" aria-hidden="true"></div>
+      </div>
+
+      <div class="chef-content reveal-right">
+        <p class="eyebrow">Meet Our Culinary Artist</p>
+        <h2 class="section-title">Chef <span class="gold-text">Arjun Malhotra</span></h2>
+        <p class="chef-exp">18+ Years of Culinary Excellence</p>
+        <p class="chef-desc">
+          A three-time recipient of the National Culinary Excellence Award, Chef Arjun trained
+          under Michelin-starred kitchens across Europe before returning home to reimagine Indian
+          fine dining. His philosophy: honour tradition, elevate technique, and let every ingredient
+          speak for itself.
+        </p>
+        <div class="chef-signature">Arjun Malhotra</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header center">
+        <p class="eyebrow">Guest Experiences</p>
+        <h2 class="section-title">What Our <span class="gold-text">Guests Say</span></h2>
+      </div>
+
+      <div class="testimonial-slider">
+        <div class="testimonial-track" id="testimonialTrack">
+
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"An unforgettable evening. The Royal Thali was a symphony of flavours and the service was impeccable from start to finish."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80&auto=format&fit=crop" alt="Ananya Sharma">
+              <div><span class="author-name">Ananya Sharma</span><span class="author-role">Corporate Client</span></div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"The ambience alone is worth the visit — add in the Butter Chicken and this became our anniversary tradition."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80&auto=format&fit=crop" alt="Rohan Deshpande">
+              <div><span class="author-name">Rohan Deshpande</span><span class="author-role">Food Blogger</span></div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Every dish felt hand-crafted with love. The Truffle Pasta and Gulab Jamun were an absolute revelation."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80&auto=format&fit=crop" alt="Meera Kulkarni">
+              <div><span class="author-name">Meera Kulkarni</span><span class="author-role">Regular Guest</span></div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"We hosted our entire team dinner here. Professional staff, elegant private seating, and outstanding food."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&q=80&auto=format&fit=crop" alt="Priya Nair">
+              <div><span class="author-name">Priya Nair</span><span class="author-role">HR Manager, Infosys</span></div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"The Mutton Rogan Josh rivals anything I've had in Kashmir. Genuinely world-class Indian cuisine."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&q=80&auto=format&fit=crop" alt="Vikram Rao">
+              <div><span class="author-name">Vikram Rao</span><span class="author-role">Restaurant Critic</span></div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Proposed to my partner here — the staff arranged the most magical candlelit corner table. Forever grateful."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=100&q=80&auto=format&fit=crop" alt="Aditya Joshi">
+              <div><span class="author-name">Aditya Joshi</span><span class="author-role">Guest</span></div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="testimonial-controls">
+          <button class="testi-btn" id="testiPrev" aria-label="Previous testimonial">←</button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-btn" id="testiNext" aria-label="Next testimonial">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESERVATION ===================== -->
+  <section class="reservation" id="reservation">
+    <div class="reservation-bg" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1600&q=80&auto=format&fit=crop" alt="" loading="lazy">
+    </div>
+    <div class="container">
+      <div class="reservation-box reveal-up">
+        <div class="section-header center">
+          <p class="eyebrow">Book Your Evening</p>
+          <h2 class="section-title">Reserve Your <span class="gold-text">Table</span></h2>
+          <p class="section-desc">Reserve in advance to guarantee your preferred time and seating.</p>
+        </div>
+
+        <form class="reservation-form" id="reservationForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resName">Full Name</label>
+              <input type="text" id="resName" name="name" placeholder="Your name" required>
+              <span class="form-error" id="err-resName"></span>
+            </div>
+            <div class="form-group">
+              <label for="resPhone">Phone Number</label>
+              <input type="tel" id="resPhone" name="phone" placeholder="+91 00000 00000" required>
+              <span class="form-error" id="err-resPhone"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resEmail">Email Address</label>
+              <input type="email" id="resEmail" name="email" placeholder="you@example.com" required>
+              <span class="form-error" id="err-resEmail"></span>
+            </div>
+            <div class="form-group">
+              <label for="resGuests">Guests</label>
+              <select id="resGuests" name="guests" required>
+                <option value="">Select guests</option>
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+                <option>5+ Guests</option>
+              </select>
+              <span class="form-error" id="err-resGuests"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resDate">Date</label>
+              <input type="date" id="resDate" name="date" required>
+              <span class="form-error" id="err-resDate"></span>
+            </div>
+            <div class="form-group">
+              <label for="resTime">Time</label>
+              <input type="time" id="resTime" name="time" required>
+              <span class="form-error" id="err-resTime"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="resMessage">Special Requests</label>
+            <textarea id="resMessage" name="message" rows="4" placeholder="Anniversary, dietary preferences, seating requests..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            <span>Confirm Reservation</span>
+          </button>
+
+          <p class="form-success" id="formSuccess" role="status">✔ Thank you! Your table request has been received. We'll confirm shortly.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal-left">
+        <p class="eyebrow">Get In Touch</p>
+        <h2 class="section-title">Visit <span class="gold-text">The Royal Spice</span></h2>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-icon">📍</span>
+            <div><strong>Address</strong><p>FC Road, Pune, Maharashtra</p></div>
+          </li>
+          <li>
+            <span class="contact-icon">📞</span>
+            <div><strong>Phone</strong><p><a href="tel:+919876543210">+91 98765 43210</a></p></div>
+          </li>
+          <li>
+            <span class="contact-icon">✉️</span>
+            <div><strong>Email</strong><p><a href="mailto:info@theroyalspice.com">info@theroyalspice.com</a></p></div>
+          </li>
+          <li>
+            <span class="contact-icon">🕒</span>
+            <div><strong>Hours</strong><p>Mon–Sun: 12:00 PM – 11:30 PM</p></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contact-map reveal-right">
+        <iframe
+          title="The Royal Spice Location Map"
+          src="https://www.google.com/maps?q=FC+Road,+Pune,+Maharashtra&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-icon">✦</span>
+          <span class="logo-text">The Royal <em>Spice</em></span>
+        </a>
+        <p>Pune's most cherished address for luxury Indian &amp; continental fine dining since 2010.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reservation">Reservation</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-hours">
+        <h4>Opening Hours</h4>
+        <ul>
+          <li><span>Mon – Fri</span><span>12:00 PM – 11:00 PM</span></li>
+          <li><span>Saturday</span><span>12:00 PM – 11:30 PM</span></li>
+          <li><span>Sunday</span><span>11:00 AM – 11:30 PM</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>FC Road, Pune, Maharashtra</p>
+        <p>+91 98765 43210</p>
+        <p>info@theroyalspice.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> The Royal Spice. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== FLOATING BUTTONS ===================== -->
+  <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M16.001 3C9.11 3 3.5 8.61 3.5 15.5c0 2.34.63 4.53 1.73 6.42L3 29l7.27-2.19a12.44 12.44 0 0 0 5.73 1.4h.01c6.89 0 12.5-5.61 12.5-12.5S22.89 3 16.001 3zm0 22.6h-.01a10.4 10.4 0 0 1-5.31-1.46l-.38-.22-3.95 1.19 1.19-3.85-.25-.4a10.34 10.34 0 0 1-1.58-5.52c0-5.75 4.68-10.43 10.44-10.43 2.79 0 5.41 1.09 7.38 3.06a10.36 10.36 0 0 1 3.05 7.38c0 5.76-4.68 10.25-10.58 10.25zm5.71-7.71c-.31-.16-1.85-.91-2.14-1.02-.29-.11-.5-.16-.71.16-.21.31-.81 1.02-1 1.23-.18.21-.37.23-.68.08-.31-.16-1.32-.49-2.51-1.55-.93-.83-1.56-1.85-1.74-2.16-.18-.31-.02-.48.14-.63.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.53-.71-.54-.18-.01-.39-.01-.6-.01-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.63 0 1.55 1.13 3.05 1.29 3.26.16.21 2.22 3.39 5.38 4.75.75.32 1.34.51 1.8.66.76.24 1.45.21 2 .13.61-.09 1.85-.76 2.11-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.37z"/></svg>
+  </a>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
